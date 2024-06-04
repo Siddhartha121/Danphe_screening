@@ -7,14 +7,11 @@ def boxy(n)
             print "1"
         else
             print "|#{i}"
-    
         end
     end
     puts "|"
-
     # lower pert dash 
     puts '-' * (n)
-
 end
 
 puts "Enter the size of the box:"

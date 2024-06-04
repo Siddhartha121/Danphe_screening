@@ -1,14 +1,14 @@
 # generic program for number system
 
-def number_conversion(base,given_number,change_into_number_numbersystem)
+def number_conversion(base,given_number,change_into_number_system)
     if(base == "2")
-        h = given_number.to_s(2)
-        return h
+        converted_num = given_number.to_s(2)
+        return converted_num
     elsif (base == "8")
-        h = given_number.to_s(8)
-        return h
+        converted_num = given_number.to_s(8)
+        return converted_num
     elsif (base == "16")
-        h = given_number.to_s(16)
+        converted_num = given_number.to_s(16)
     elsif (base == "10")
         return given_number
     else
@@ -17,10 +17,10 @@ def number_conversion(base,given_number,change_into_number_numbersystem)
 end
 
 puts "Enter the number you want to change"
-a = gets.chomp.to_i
+entered_value = gets.chomp.to_i
 puts "enter the name of the number system you want to convert into"
-b = gets.chomp.to_i
+converted_num_system_name= gets.chomp.to_i
 puts "Enter the base of the number system you want to convert into"
-c=gets.chomp
-result = number_conversion(c,a,b)
-puts "On changing your number into #{a}, Your converted number is#{result}"
+base_of_comverted_num_system=gets.chomp
+result = number_conversion(base_of_comverted_num_system,entered_value,converted_num_system_name)
+puts "On changing your number into #{entered_value}, Your converted number is#{result}"

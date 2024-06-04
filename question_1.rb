@@ -1,17 +1,17 @@
 def greatest_num
     puts "Enter the first number"
-    a = gets.chomp
+    first_num = gets.chomp
     puts "Enter second number"
-    b = gets.chomp
+    second_num = gets.chomp
     puts "Enter third number"
-    c = gets.chomp
-    if (a > b) && (a > c)
-        puts "#{a} is greatest number"
-    elsif (b > a) && (b > c)
-        puts "#{b} is greatest number"
-    elsif (c > a) && (c > b)
-        puts "#{c} is greatest number"
-        end
+    third_num = gets.chomp
+    if (first_num > second_num) && (first_num > third_num)
+        puts "#{first_num} is greatest number"
+    elsif (second_num > first_num) && (second_num > third_num)
+        puts "#{second_num} is greatest number"
+    elsif (third_num > first_num) && (third_num > second_num)
+        puts "#{third_num} is greatest number"
+    end
 end
 
 greatest_num
