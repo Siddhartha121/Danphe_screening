@@ -12,12 +12,8 @@ def boxy(n)
     puts "|"
     # lower pert dash 
     puts '-' * (n)
-end
-
-puts "Enter the size of the box:"
-n = gets.chomp.to_i
-if(n < 1)
-    puts "Your value is less than 1 so no box for you"
-else
-    boxy(n)
-end
+  end
+  
+  puts "Enter the size of the box:"
+  number_of_box = gets.chomp.to_i
+  (number_of_box < 1) ? puts("Your value is less than 1 so no box for you") : boxy(number_of_box)
