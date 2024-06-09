@@ -1,16 +1,16 @@
-def match_words(array, string1)
-      char_count = Hash.new(0)
-      string1.each_char do |char|
-      if array.include?(char)
-        char_count[char] += 1
-      end
+def match_words(string1)
+  char_count = Hash.new(0)
+  string1.each_char do |char|
+    if string1.include?(char)
+      char_count[char] += 1
     end
-      char_count
   end
-  
-  # Example usage
-  dictionary = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
-                'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-  result = match_words(dictionary, 'hello how are you')
-  puts result
+  char_count
+end
+
+# Example usage
+puts "Enter the sentence for character counter"
+given_string = gets.chomp
+result = match_words(given_string)
+puts result
   

@@ -1,9 +1,7 @@
 # using tertiary if else condition
 def greatest_num(a,b,c)
-
     greatest = (a > b) && (a > c) ? a : 
-               (b > a) && (b > c) ? b : c
-    # puts "#{greatest} is the greatest number"
+               (b > a) && (b > c) ? b : c  
     greatest
 end
   

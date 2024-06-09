@@ -1,4 +1,5 @@
 # prints 1 to 100 
+def printing_fizzbuzz
     my_range = []
     (1 .. 100).to_a.each do |val_of_array| 
         if (val_of_array % 3 == 0) && (val_of_array % 5 == 0)
@@ -10,7 +11,8 @@
         else
             my_range << val_of_array
         end
+        puts my_range
     end   
-    puts my_range 
-
+end
+printing_fizzbuzz
 
