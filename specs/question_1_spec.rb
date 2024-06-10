@@ -1,4 +1,4 @@
-# spec/question_1_spec.rb
+
 require_relative '../greatest_num'
 RSpec.describe 'greatest_num' do
   context 'when given three numbers' do
